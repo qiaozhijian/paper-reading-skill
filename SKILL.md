@@ -35,6 +35,7 @@ When the user asks to download an arXiv paper and generate a note, follow these 
     *   Instruct the subagent to **strictly follow** the criteria in the prompt.
     *   Instruct the subagent to save the output markdown note to `<TARGET_NOTES_DIR>` (e.g., `visual-lang-action/notes/PhyCritic.md`). 
     *   Tell the subagent to use `$$` for block math formulas and `$` for inline math.
+    *   **Important**: Markdown does not support `\begin{aligned}`, `\begin{array}`, `\begin{cases}`, or other LaTeX environments. Only use simple inline (`$...$`) or block (`$$...$$`) math syntax.
     *   Tell the subagent to perform web searches for section 4 of the prompt ("与当前领域主流共识及反对观点的关系").
 
 5.  **Confirm Completion:**
